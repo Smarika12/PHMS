@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "189373885431",
+    "firebase_url": "https://cse-3310-group-project-default-rtdb.firebaseio.com",
+    "project_id": "cse-3310-group-project",
+    "storage_bucket": "cse-3310-group-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189373885431:android:a7d7138a6c2cbcbdca1cf2",
+        "android_client_info": {
+          "package_name": "com.example.phms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189373885431-b136qk22vnhtkbg1bde6epv400cv4806.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-DnhMJvgPI4dVRWN9txCW1UM3UBJM0C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189373885431-b136qk22vnhtkbg1bde6epv400cv4806.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
