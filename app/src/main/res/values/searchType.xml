@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_type_array">
+        <item>Appointments</item>
+        <item>Doctors</item>
+        <item>Medications</item>
+    </string-array>
+</resources>

@@ -25,9 +25,12 @@
 
             <TextView
                 android:id="@+id/vitalSignsTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vital Signs" />
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_span="3"
+                android:text="VITAL SIGNS"
+                android:textAlignment="center"
+                android:textSize="34sp" />
         </TableRow>
 
         <TableRow
@@ -36,8 +39,9 @@
 
             <EditText
                 android:id="@+id/HeightTextName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="221dp"
+                android:layout_height="match_parent"
+                android:layout_span="3"
                 android:ems="10"
                 android:hint="Height"
                 android:inputType="textPersonName" />
@@ -50,7 +54,8 @@
             <EditText
                 android:id="@+id/weightTextName"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="3"
                 android:ems="10"
                 android:hint="Weight"
                 android:inputType="textPersonName" />
@@ -62,8 +67,9 @@
 
             <EditText
                 android:id="@+id/bgTextName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="228dp"
+                android:layout_height="match_parent"
+                android:layout_span="3"
                 android:ems="10"
                 android:hint="Blood Group "
                 android:inputType="textPersonName" />
@@ -76,8 +82,9 @@
 
             <EditText
                 android:id="@+id/sugarLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="231dp"
+                android:layout_height="match_parent"
+                android:layout_span="3"
                 android:ems="10"
                 android:hint="Sugar Level"
                 android:inputType="textPersonName" />
@@ -91,9 +98,22 @@
                 android:id="@+id/bloodPressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_span="3"
                 android:ems="10"
                 android:hint="Blood Pressure"
                 android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -102,23 +122,42 @@
 
             <Button
                 android:id="@+id/Submit"
-                android:layout_width="wrap_content"
+                android:layout_width="118dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:layout_marginEnd="10px"
                 android:background="#E91E63"
                 android:backgroundTint="#E91E63"
                 android:text="Submit" />
 
             <Button
                 android:id="@+id/Cancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="123dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10px"
+                android:layout_marginEnd="10px"
                 android:text="Cancel " />
 
             <Button
                 android:id="@+id/Exit"
-                android:layout_width="wrap_content"
+                android:layout_width="146dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:layout_marginEnd="10px"
                 android:text="Exit" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_span="3"
+                android:text="Search"
+                android:textSize="24sp" />
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

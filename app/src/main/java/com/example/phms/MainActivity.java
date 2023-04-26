@@ -5,6 +5,7 @@ import static java.lang.Integer.parseInt;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +19,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
-    Button mButton,mCancel,mExit;
+    Button mSubmit,mCancel,mExit,mSearch;
     EditText mHeightText;
     EditText mWeightText;
     EditText mBPText;
@@ -28,15 +29,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mButton = (Button)findViewById(R.id.Submit);
+        mSubmit = (Button)findViewById(R.id.Submit);
         mCancel = (Button)findViewById(R.id.Cancel);
         mExit = (Button)findViewById(R.id.Exit);
+        mSearch = (Button)findViewById(R.id.buttonSearch);
         mHeightText   = (EditText)findViewById(R.id.HeightTextName);
         mWeightText   = (EditText)findViewById(R.id.weightTextName);
         mBPText   = (EditText)findViewById(R.id.bloodPressure);
         mSugarText   = (EditText)findViewById(R.id.sugarLevel);
         mBGText = (EditText)findViewById(R.id.bgTextName);
-        mButton.setOnClickListener(
+        mSubmit.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View view)
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                 });;
                     }
                 });
-        mButton.setOnClickListener(
+        mSubmit.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View view)
@@ -88,5 +90,21 @@ public class MainActivity extends AppCompatActivity {
                                 });;
                     }
                 });
+        mSearch.setOnClickListener(
+                new View.OnClickListener(){
+                    public void onClick(View view)
+                    {
+                        startActivity(new Intent(MainActivity.this, SearchActivity.class));
+                    }
+                }
+        );
+        mExit.setOnClickListener(
+                new View.OnClickListener(){
+                    public void onClick(View view)
+                    {
+                        finishAndRemoveTask();
+                    }
+                }
+        );
     }
 }
